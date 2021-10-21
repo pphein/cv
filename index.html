@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyae Phyo Hein</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        
+        .highlight {
+            background-color: rgb(230, 209, 93);
+            display: grid;
+        }
+        
+        .whitelight * {
+            background: rgb(238, 237, 233);
+            color: rgb(187, 167, 55);
+        }
+        
+        .row {}
+        
+        .col {
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        .navbar-brand {
+            display: absolute;
+            top: 0;
+            left: 50%;
+            font-size: 48px;
+            color: white;
+            text-shadow: 4px 4px 4px rgb(196, 82, 82);
+            font-family: 'Old Standard TT';
+            padding: 20px 2%;
+        }
+        
+        .title {}
+        
+        .titleword h1 {
+            color: rgb(53, 47, 36);
+            text-shadow: 4px 4px 4px rgb(209, 167, 51);
+            text-align: center;
+            overflow: hidden;
+            border-right: .15em solid rgb(13, 17, 15);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: typing 7s steps(32, end), blink-caret 7s step-end infinite;
+        }
+        
+        .profile {
+            line-height: 30px;
+        }
+        
+        .profilephoto {
+            width: 45%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            float: left;
+        }
+        
+        .profilephoto img {
+            width: 80%;
+            margin: 7%;
+            border-radius: 50%;
+            box-shadow: 4px 4px 4px rgb(62, 33, 65);
+        }
+        
+        .about {
+            width: 48%;
+            float: left;
+        }
+        
+        .about h3,
+        li,
+        p {
+            color: white;
+        }
+        
+        .remark {
+            clear: both;
+            padding: 20px 40px;
+        }
+        
+        .remark p {
+            text-align: justify;
+            line-height: 30px;
+        }
+        
+        .remark li {
+            line-height: 30px;
+        }
+        
+        .skill {
+            padding: 40px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        meter {
+            border: 1px solid #aaa;
+            width: 95%;
+        }
+        
+        .remark a {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: royalblue;
+            overflow: hidden;
+            background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 275ms ease;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            background-position: 0 100%;
+        }
+        /* this typing effect */
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%
+            }
+        }
+        /*  This is typewriter cursor effect */
+        
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+            5% {
+                border-color: orange;
+            }
+        }
+        
+        @media screen and (min-device-width: 100px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
+            .container {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .col {
+                margin: 1%;
+                padding: 1%;
+            }
+            .navbar {
+                width: 99%;
+            }
+            .navbar-brand {
+                font-size: 1.5em;
+            }
+            .title {
+                width: 99%;
+            }
+            .titleword {
+                width: %;
+                text-align: left;
+            }
+            .titleword h1 {
+                display: block;
+                width: 100%;
+                font-size: 92%;
+                padding: 0;
+                margin: 0;
+                animation: typing 4s steps(28, end), blink-caret 4s step-end infinite;
+            }
+            @keyframes typing {
+                from {
+                    width: 0
+                }
+                to {
+                    width: 93%
+                }
+            }
+            .profile {
+                width: 98%;
+            }
+            .profilephoto {
+                width: 97%;
+            }
+            .profilephoto img {
+                width: 50%;
+                border-radius: 50%;
+            }
+            .about {
+                width: 98%;
+                padding: 2%;
+            }
+            .whitelight {
+                width: 100%;
+            }
+            .remark {
+                width: 81%;
+            }
+            .skill {
+                width: 81%;
+            }
+            li {
+                width: 90%;
+                word-wrap: break-word;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="highlight">
+            <div class="row navbar">
+                <div class="col navbar-brand">Pyae Phyo Hein</div>
+
+            </div>
+            <div class="row title">
+                <div class="col titleword">
+                    <h1>I'm a Freelance Web Developer.</h1>
+                </div>
+
+            </div>
+
+            <div class="row profile">
+                <div class="col profilephoto">
+                    <img src="img/profilephoto.jpg" alt="profile photo">
+                </div>
+
+
+                <!-- <div class="hello" style='color:#7c4dff'>Hello</div>
+            <div class="hello" style='color: #0091ea'>Hello</div>
+            <div class="hello" style='color: #ff9100'>Hello</div>
+            <div class="hello" style='color: #ff1744'>Hello</div> -->
+
+                <div class="col about">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden=”true”></i> &nbsp; : &nbsp; 09779139215</li>
+
+                        <li> <i class="fa fa-envelope" aria-hidden=”true”></i> &nbsp; : &nbsp; pphein.mm@gmail.com</li>
+                        <li><i class="fab fa-facebook" aria-hidden=”true”></i> &nbsp; : &nbsp; facebook.com/pphein</li>
+                        <li><i class="fab fa-twitter" aria-hidden=”true”></i> &nbsp; : &nbsp; twitter.com/heinyan</li>
+                        <li><i class="fab fa-github" aria-hidden=”true”></i> &nbsp; : &nbsp; github.com/pphein</li>
+
+
+                    </ul>
+                    <br>
+                    <h3>Education</h3>
+                    <p>B.Ed (2008) <br> Sagaing Institute of Education</p>
+                    <br>
+                    <h3>Languages</h3>
+                    <p>Burmese (Native)</p>
+                    <p>English (Independent)</p>
+                    <br>
+                    <h3>Hobbies</h3>
+                    <p>Reading | Traveling </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--  <div class="row example">
+            <div class="egimage">
+                <img src="img/profilephoto.jpg" alt="">
+            </div>
+        </div> -->
+
+
+        <div class="whitelight">
+            <div class="row remark">
+
+                <h3>About</h3>
+                <br>
+                <p>I am a former government staff. I love programming. So I have learned Web developing since 2015. I started learning programming language, PHP. And I continued learning JavaScript and Laravel Framework of PHP. And I continued to improve
+                    my skill by writing code in own projects. So I honestly say I have no job experiences in any company. But I have experiences on my own projects of PHP, JavaScript and Laravel and I have experiences on Git and in deploying projects
+                    on Digital Ocean.
+                </p>
+                <br>
+                <br>
+                <h3>Experiences</h3>
+                <br>
+                <ul>
+                    <li><a href="https://draunglin.herokuapp.com">draunglin.herokuapp.com</a> (CRUD, Email Verification, Reset Password)<br> This project is coded by myself: front-end using HTML, CSS, JavaScript and back-end with Laravel Framework. I had
+                        deployed this project on digital ocean hosting for my teacher. But I can’t effort hosting fee for long time. Now I have deployed on heroku.com to apply this job position.
+                    </li>
+                    <br>
+                    <li>
+                        <a href="https://socketslgame.herokuapp.com">socketslgame.herokuapp.com</a> <br>This project is also coded by myself for Two Players With Two Devices using JavaScript and Socket.io for realtime active.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="row">
+                <div class="skill">
+                    <h3>Skills</h3>
+                    <br>
+                    <ul>
+                        <li>HTML &nbsp;&nbsp;<i class="fab fa-html5"></i> <br> <meter value="75" min="0" max="100"></meter> </li><br>
+                        <li>CSS &nbsp;&nbsp; <i class="fab fa-css3-alt"></i><br> <meter value="70" min="0" max="100"></meter></li><br>
+                        <li>JavaScript &nbsp;&nbsp; <i class="fab fa-js-square"></i><br> <meter value="50" min="0" max="100"></meter></li><br>
+                        <li>PHP &nbsp;&nbsp; <i class="fab fa-php"></i><br> <meter value="50" min="0" max="100"></meter></li><br>
+                        <li>Laravel&nbsp;&nbsp; <i class="fab fa-laravel"></i> <br> <meter value="45" min="0" max="100"></meter></li><br>
+                        <li>Git &nbsp;&nbsp; <i class="fab fa-git"></i> <br> <meter value="45" min="0" max="100"></meter></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="highlight" style="text-align: center; line-height: 50px; font-size: 20px; height: 50px;">
+            <p><i class="fa fa-copyright" aria-hidden="true"></i>2021</p>
+        </div>
+
+
+
+</body>
+
+</html>
